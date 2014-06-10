@@ -1,0 +1,1 @@
+A quick test with CSS3 filters, currently ( as of june 2014 ) supported only by webkit-based browsers.
