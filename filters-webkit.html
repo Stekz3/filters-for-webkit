@@ -19,13 +19,22 @@
 	-webkit-filter: none;
 	filter: none;
 }
+#Divisore {
+	position:relative;
+	width:5px;
+	height:150px;
+	margin:20px;
+	float:left;
+	background-color: #999;
+}
 .Copertura {
-	width:80px;
-	height:80px;
-	left:-10px;
-	top:20px;
+	width:60px;
+	height:60px;
+	left:30px;
+	border-radius:50%;
+	top:30px;
 	position:absolute;
-	background-color:rgb(255,255,255);
+	background-color:rgba(255,255,255,1);
 }
 .Sfondo {
 	background-image:url(sfondo.jpg);
@@ -51,6 +60,18 @@
 	 -webkit-filter: brightness(200%);
   filter: brightness(200%);
 }
+.Prova6 {
+	 -webkit-filter: saturate(50%);
+  filter: saturate(50%);
+}
+.Prova7 {
+	 -webkit-filter: hue-rotate(60deg);
+  filter: hue-rotate(60deg);
+}
+.Prova8 {
+	 -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
 </style>
 </head>
 
@@ -58,17 +79,26 @@
 <!-- Grayscale -->
 <div id="Cont" class="Sfondo Prova1"></div>			<div id="Cont"><img src="sfondo.jpg" class="Prova1" width="200" height="150" /></div>
 
-<!-- Sepia -->
+<div id="Divisore"></div><!-- Sepia -->
 <div id="Cont" class="Sfondo Prova2"></div>			<div id="Cont"><img src="sfondo.jpg" class="Prova2" width="200" height="150" /></div>
 
-<!-- Blur -->
+<div id="Divisore"></div><!-- Blur -->
 <div id="Cont" class="Sfondo Prova3"></div> 		<div id="Cont"><img src="sfondo.jpg" class="Prova3" width="200" height="150" /></div>
 <div id="Cont"><div class="Copertura Prova3"></div><img src="sfondo.jpg" width="200" height="150" /></div>
 
-<!-- Contrasto -->
+<div id="Divisore"></div><!-- Contrasto -->
 <div id="Cont" class="Sfondo Prova4"></div>			<div id="Cont"><img src="sfondo.jpg" class="Prova4" width="200" height="150" /></div>
 
-<!-- Luminosità -->
+<div id="Divisore"></div><!-- Luminosità -->
 <div id="Cont" class="Sfondo Prova5"></div>			<div id="Cont"><img src="sfondo.jpg" class="Prova5" width="200" height="150" /></div>
+
+<div id="Divisore"></div><!-- Satutazione -->
+<div id="Cont" class="Sfondo Prova6"></div>			<div id="Cont"><img src="sfondo.jpg" class="Prova6" width="200" height="150" /></div>
+
+<div id="Divisore"></div><!-- hue-rotate -->
+<div id="Cont" class="Sfondo Prova7"></div>			<div id="Cont"><img src="sfondo.jpg" class="Prova7" width="200" height="150" /></div>
+
+<div id="Divisore"></div><!-- Inverti colori -->
+<div id="Cont" class="Sfondo Prova8"></div>			<div id="Cont"><img src="sfondo.jpg" class="Prova8" width="200" height="150" /></div>
 </body>
 </html>
